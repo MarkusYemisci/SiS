@@ -1,0 +1,259 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Stilvorlage für Bücher des DaIsKe-Verlags %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Einstellungen für das Gesamtdesign %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[10pt,oneside]{book}
+\paperwidth=13cm
+\paperheight=20cm
+\usepackage[left=1.5cm, right=1cm, top=1.5cm, bottom=1.5cm]{geometry}
+% Aussehen der Kopf- und Fußzeilen:
+\pagestyle{plain}
+% Für Große Buchstaben in der ersten Zeile:
+\usepackage{lettrine}
+\newcommand{\q}[1]{>>\textit{#1}<<}
+% Falls nicht der Standard-LaTeX-Font benutzt werden soll, kann dies hier eingestellt werden:
+\usepackage[sc]{mathpazo}
+%\linespread{1.05}
+% Hurenkinder und Schusterjungen:
+\clubpenalties=3 10000 10000 150
+\widowpenalties=3 10000 10000 150
+% Die Kapitelüberschrift soll richtig groß sein:
+\usepackage{sectsty}
+\chapterfont{\huge}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Textcodierung %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Eigene Befehle %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Die folgenden Befehle kennzeichnen "Gedankenrede" eine Charaters, wörtliche Rede und Eigennamen:
+\newcommand{\denken}[1]{#1}
+\newcommand{\ortswechsel}{\vspace{1cm}\\}
+\newcommand{\WR}[1]{\guillemotright#1\guillemotleft}
+\newcommand{\Wr}[1]{\guilsinglright#1\guilsinglleft}
+\newcommand{\EN}[1]{\textsc{#1}}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Allgemeine Informationen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Schnee im September}
+\author{Markus Roth}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Sonstige Anpassungen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{verbatim} % für Kommentare
+\usepackage{listings} % …
+\usepackage{hyperref} % Für Hyperlinks
+\usepackage{graphicx} % Für Abbildungen wie Logos, etc.
+%\usepackage{blindtext} % Für Beispieltext.
+%
+%
+%
+\begin{document}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Titelseite %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+% Der Titel:
+\centering{ {\fontsize{40}{48}\selectfont Schnee im September}\\
+% Kurzer Abstand zum Autor:
+\vspace{10mm}
+\Large{Markus Yemişçi}\\
+% Langer Abstand bis zur Fußzeile:
+\vspace{\fill}
+% Verlag:
+\large{DaIsKe Verlag}
+} % Ende des Zentrierens.
+\end{titlepage}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Infoseite %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\thispagestyle{empty}
+\begin{center}
+% Link zur Verlagsseite:
+\includegraphics[height=1.5cm]{\string~/DaIsKe/Bilder/daiskeverlag2.png}\\
+\href{http://daiske.de}{daiske.de}\\
+% Langer Abstand zum Datum des Exports:
+\vspace{5cm}
+\today\\
+% Langer Abstand zum Copyright:
+\vspace{\fill}
+\includegraphics[height=1cm]{\string~/DaIsKe/Bilder/cclogo.png}\\
+Dieser Roman unterliegt der "`Creative Commons 4.0 International"' Lizenz mit folgenden Spezifikationen:\\
+\textit{Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen}\\
+\includegraphics[height=1cm]{\string~/DaIsKe/Bilder/byncsa.png}\\
+Nähere Informationen unter:\\
+\href{http://creativecommons.org/licenses/by-nc-sa/4.0/}{creativecommons.org}\\
+% Kurzer Abstand zu den Mitwirkenden:
+\vspace{5mm}
+Korrektur: Frank Diedrich\\
+% Kurzer Abstand zum LaTeX-Logo:
+\vspace{5mm}
+\LaTeX
+\end{center}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Widmungsseite%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\thispagestyle{empty}
+% Langer Abstand zur Widmungs:
+\vspace*{2cm}
+\large{\textit{Für meine Familie und meine Freunde, die meine Reden über Science Fiction jahrelang ertragen mussten und noch ertragen.}}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Eigentlicher Buchinhalt%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\setcounter{page}{1} % Beim DaIsKe Verlag wird mit der ersten Zeile die erste Seite gezählt. Alles davor ist Pille-Palle.
+%
+% Einfügen der eigentlichen Kapitel:
+\chapter{}
+\input{Lauras_Einfuehrung.tex}
+\input{Einfuehrung_der_Virial.tex}
+\input{Otis_Einfuehrung.tex}
+\input{Mortens_Einfuehrung.tex}
+\input{Cileas_Interview.tex}
+\chapter{}
+\input{Die_Virial_wird_fuendig.tex}
+\input{Lauras_Arbeitsweg.tex}
+\input{Bellendis_Einfuehrung.tex}
+\chapter{}
+\input{Die_Koenigin.tex}
+\input{Morten_und_Kevin_auf_der_Regenvogel.tex}
+\input{Die_Innereien_der_Regenvogel.tex}
+\chapter{}
+\input{Laura_und_Klaus_bereiten_die_Jagd_vor.tex}
+\input{Lauras_Traum.tex}
+\input{Otis_und_Revendeur.tex}
+\input{Samad_und_Fiscale.tex}
+\input{Otis_Auftritt_im_Senat.tex}
+\input{Die_Lounge_der_Regenvogel.tex}
+\input{Einsatzbesprechung.tex}
+\chapter{}
+\input{Akintola_stellt_Otis_zur_Rede.tex}
+\input{Freiburg.tex}
+\input{Vor_dem_Start.tex}
+\input{Hyperraumsprung.tex}
+\chapter{}
+\input{Freiburgs_Nachspiel.tex}
+\input{Morten_und_Anna_starten.tex}
+\input{Retardierung_auf_der_Bruecke.tex}
+\input{Die_Virial.tex}
+\input{Das_Schicksal_der_Virial.tex}
+\chapter{}
+\input{Angriff_auf_die_Kaukasia.tex}
+\input{Nicos_Einfuehrung.tex}
+\input{Nicos_Start.tex}
+\input{Die_Regenvogel_in_Pollux.tex}
+\input{Ed_Steiners_Tod.tex}
+\input{Die_Regenvogel_unter_Feuer.tex}
+\input{Dexters_Verrat.tex}
+\input{Notlandung.tex}
+\chapter{}
+\input{Forensik_in_Nizza.tex}
+\input{Siegerehrung.tex}
+\input{Schwarzer_Baers_Einfuehrung.tex}
+\input{Notfallbesprechung.tex}
+\input{Fiscales_Traurigkeit.tex}
+\input{Krankenstation.tex}
+\input{Nico_wird_wieder_Pilot.tex}
+\chapter{}
+\input{Laura_und_Klaus_im_Zug.tex}
+\input{Bellendi_wird_rekrutiert.tex}
+\input{Nachforschungen_in_Sucre.tex}
+\input{Auf_der_Heinlein.tex}
+\input{Showdown_in_Oslo.tex}
+\chapter{}
+\input{Bellendi_erreicht_Kreuzpunkt.tex}
+\input{Bellendis_Betrug.tex}
+\input{Expertenrat.tex}
+\input{Nicos_Hintergrund.tex}
+\chapter{}
+\input{Die_Bar_in_Kroatien.tex}
+\input{Offenbarung_der_Shutek.tex}
+\input{Lauras_Plan.tex}
+\input{Mortens_und_Nicos_Konfrontation.tex}
+\input{Ueber_Nico.tex}
+\input{Der_Code_der_Shutek.tex}
+\chapter{}
+\input{Der_Verraeter.tex}
+\input{Stimmungsmache.tex}
+\input{Thalia_Bell.tex}
+\input{Kontaktabbruch.tex}
+\input{Hyperraumsprung_II.tex}
+\input{Die_Lage_bei_Kreuzpunkt.tex}
+\input{Morten_und_Kevin_greifen_an.tex}
+\input{Angriff_der_Regenvogel.tex}
+\input{Eagle_Twenty.tex}
+\input{Durch_den_flachen_Hyperraum.tex}
+\input{Stellung_halten.tex}
+\input{Lufthoheit_ueber_Kreuzpunkt.tex}
+\input{Silberstreif.tex}
+\input{Kringels_Ende.tex}
+\input{Silberstreif_II.tex}
+\input{Bodenanflug.tex}
+\input{D_Day.tex}
+\input{Kampf_ueber_Kreuzstadt.tex}
+\input{Auf_eigene_Faust.tex}
+\chapter{}
+\input{Das_Krankenhaus.tex}
+\input{Klaus_Offenbarung.tex}
+\input{Baers_Plan.tex}
+\input{Stress_auf_der_Bruecke.tex}
+\input{Marktplatz.tex}
+\input{Null_Null_Null_Zerstoerung_Null.tex}
+\input{Todesurteil.tex}
+\input{Schachmatt.tex}
+\input{Wasserreservoir.tex}
+\input{Morten_entscheidet.tex}
+\input{Gethas_vs_Rensing.tex}
+\input{Annas_Elite.tex}
+\input{Seilbahnfahrt.tex}
+\input{Behandlungszimmer.tex}
+\input{Showdown_auf_dem_Spechtgipfel.tex}
+\input{Der_letzte_Befehl.tex}
+\chapter{}
+\input{Showdown_auf_dem_Dach.tex}
+\input{Helden.tex}
+\input{Madonnas_Einsatz.tex}
+\input{Helden_II.tex}
+\input{Gash.tex}
+\input{Eine_natuerliche_Verbindung.tex}
+\input{Kreuzpunkts_Morgen.tex}
+\chapter*{Epilog}
+\input{Abschlussbesprechung.tex}
+\input{Vollstreckt.tex}
+\input{Kevin_und_Morten.tex}
+\input{Das_Ende_vom_Anfang.tex}
+\input{Lauras_Tod.tex}
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Kommentare %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{comment}
+Einige Kommentare zum Buch. Verbesserungen und dergleichen.
+\end{comment}
+\end{document}
