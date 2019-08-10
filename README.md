@@ -15,12 +15,19 @@ But if you can: help is greatly appreciated.
 For ease of sharing and better structuring, I opted for LaTeX as the markdown language of this book.
 So you need a working LaTeX distribution installed on your system.
 In order to typeset your own copy of this book on linux or macOS first clone this repository.
+
     git clone https://github.com/MarkusYemisci/SiS.git
+
 Then open up a terminal and navigate to the directory namend after the language in which you would like to typeset the book. E.g.:
+
     cd Deutsch
+
 Now just type:
+
     pdflatex <Title of the Book>
+
 This title is dependent on your chosen language. E.g. in german:
+
     pdflatex "Schnee im September.tex"    
 
 ## Canon
@@ -61,4 +68,5 @@ Larger corrections like striking out sentences or changing them completely shoul
 ### Comments on a larger scale
 Changes that would affect large portions of the work should be discussed in a seperate file.
 Said file should be named like this:
+
     <name of scene>_discussion.tex
