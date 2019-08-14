@@ -1,0 +1,8 @@
+# Ignore pdflatex-utputs
+# They should be typeset anew for every repository
+
+*.aux
+*.log
+*.out
+*.pdf
+
