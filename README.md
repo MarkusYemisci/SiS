@@ -54,7 +54,7 @@ Examples are spin offs an loose sequels.
 If you wish to tell your own version of this story you are free to do so.
 Perhaps you want to use certain aspects of the universe but change others significantly.
 Like "Battlestar Galactica" did in 2003.
-The you should fork this repository and create an alternate version of the story.
+Then you should fork this repository and create an alternate version of the story.
 
 ## Collaboration
 To manage teamwork on this project the following rules apply:
