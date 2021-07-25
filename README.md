@@ -36,7 +36,7 @@ It answers the question as to what contributions, ideas and information in gener
 There are many stories about Sherlock Holmes for example.
 But only a few are considered to have "acutally happend" in Arthur Conan Doyles universe.
 
-The following rules characterize canon for the fictional universe "Schnee im Septemer" takes place in.
+The following rules characterize canon for the fictional universe "Schnee im Septemer" takes place in, called "Eine Welt aus Glas und Stahl" ("A World of Glass And Steel").
 
 ### Alpha plus canon
 The original stories written by the respective authors of a certain fork.
