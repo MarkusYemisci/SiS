@@ -32,9 +32,9 @@ This title is dependent on your chosen language. E.g. in german:
 
 ## Canon
 In fiction _canon_ is an important notion.
-It answers the question as to what contributions, ideas and information in general is to be taken as "real" in a given story.
+It answers the question as to what contributions, ideas and information in general is to be taken as "real" in a given story / fictional universe.
 There are many stories about Sherlock Holmes for example.
-But only a phew are considered to have "acutally happend" in Arthur Conan Doyles universe.
+But only a few are considered to have "acutally happend" in Arthur Conan Doyles universe.
 
 The following rules characterize canon for the fictional universe "Schnee im Septemer" takes place in.
 
